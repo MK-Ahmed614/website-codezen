@@ -1,0 +1,10 @@
+{
+    "title": "CodeZen",
+    "lang": "language",
+    "navbar": {
+        "home": "home",
+        "about": "about",
+        "our_work": "our work",
+        "contact": "contact "
+    }
+}
