@@ -1,3 +1,5 @@
+
+
 import { useTranslation } from 'react-i18next';
 import Langs from '../langs/langs';
 import "./Navbar.scss";
@@ -12,31 +14,30 @@ const Navbar = () => {
       SetNavFix(false)
     }
   }
+  const navbalinks = t("navbarlinks", {returnObjects: true})
      /*  "navbar navbar-expand-lg navbar-light " */
   return (
 <nav className={navFix ? "navbar navbar-expand-lg navbar-light active" : "navbar navbar-expand-lg navbar-light"}>
   <div className="container">
-    <a className="navbar-brand" href="#"> <img className='logo' src='../images/pro-logo.png' alt='name' /> </a>
+    <a className="navbar-brand" href="/src/components/pages/Home.js"> <img className='logo' src='../images/pro-logo.png' alt='name' /> </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">{t('navbar.home')}</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/about">{t('navbar.about')}</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/our-work">{t('navbar.our_work')}</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href='/contact'>{t('navbar.contact')}</a>
-        </li>
+        {
+          navbalinks.map((item)=> {
+            return (
+             <li className="nav-item" key={item.id}>
+              <a className="nav-link" href={item.href}>{item.text}</a>
+              </li>
+            )
+          })
+        }
       </ul>
       <div className='langs'>
         <Langs/>
+        <a href='#'>{t('order')}</a>
       </div>
   </div>
   </div>

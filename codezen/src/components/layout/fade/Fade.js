@@ -48,12 +48,12 @@ const Fade = () => {
       <div id='title'>
   <div className="text-title">
     <p>a software house that offers web <br/> and apps development services <br/> to help you achieve your goals </p>
-    <button type="button">contact</button>
-    <button type="button">who we are</button>
+    <a href="#">contact</a>
+    <a href="#">who we are</a>
   </div>
   
   <div className="ava-img">
-    <img src="./logo/pngwing.com.png" alt="vector" />
+    <img src="../images/icon-1.png" alt="vector" />
   </div>
 </div>
   <div className="waveWrapperInner bgTop">

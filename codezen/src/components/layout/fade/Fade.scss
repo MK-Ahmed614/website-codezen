@@ -70,6 +70,9 @@
   }
    */
 
+   @import '../../variables/variables.scss';
+   @import '../../variables/mixins.scss';
+
    @keyframes move_wave {
     0% {
         transform: translateX(0) translateZ(0) scaleY(1)
@@ -108,14 +111,14 @@
     line-height: 1.8;
   }
 
-  #title .text-title button {
-    background-color: #131921;
-    color: white;
-    padding: 10px 20px;
+  #title .text-title a {
+    @include creatBtn;
     margin: 0 10px;
-    border: none;
-    text-transform: capitalize;
-    border-radius: 6px;
+    background-color: $color-2;
+    &:hover {
+        background-color: $color-1;
+        color: white;
+    }
   }
 
   #title .ava-img {
@@ -143,7 +146,7 @@
     overflow: hidden;
     height: 100%;
     bottom: -1px;
-    background-image: linear-gradient(to top, #f7723e 20%, #131921 80%);
+    background-image: linear-gradient(to top, #f7723e 10%, #131921 90%);
 }
 .bgTop {
     z-index: 15;

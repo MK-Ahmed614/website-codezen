@@ -1,0 +1,56 @@
+@import '../../../variables/variables.scss';
+
+.servies{
+    .servies_container{
+       width: 100%;
+       margin: auto;
+      
+    }
+    .heda-center{
+        margin-bottom: 13px;
+        text-transform: capitalize;
+        
+    }
+    padding-top: 4rem;
+    .our-servies{
+        padding-top: 2.5rem;
+        
+        
+        .item{
+            width: 100%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+            border-radius: $border_radius;
+            margin-bottom: 20px;
+            padding: 15px;
+            height: 260px;
+            text-transform: capitalize;
+            overflow: hidden;
+          .hold-data{
+            gap: 10px;
+          }
+            .icon{
+                color: $color_1;
+                background-color: $color_2;
+                font-size: 20px;
+                width: 55px;
+                height: 55px;
+                border-radius: $border_radius;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               
+            };
+
+            
+            .content{
+                p{
+
+                   line-height: 1.7;
+                   font-size: 14px;
+                   margin-top: 10px;
+                }
+            }
+        }
+    }
+}

@@ -8,7 +8,9 @@ const Header = () => {
     <>
     <Navbar/>
     <header className='header'>
+      <div className='container'>
       <Fade/>
+      </div>
     </header>
     </>
   )
