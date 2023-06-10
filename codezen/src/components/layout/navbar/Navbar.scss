@@ -52,3 +52,18 @@
         color: $color-1;
     }
  }
+
+ [dir="rtl"] {
+    .navbar {
+        .nav-link {
+            font-size: $font_16;
+        }
+        .navbar-collapse {
+            .langs {
+                    a {
+                        @include creatBtn;
+                    }
+            }
+        }
+     }
+ }

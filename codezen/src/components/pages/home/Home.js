@@ -1,7 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import {BsCheck2Square} from 'react-icons/bs';
 import './Home.scss';
+import Header from "../../layout/header/Header";
 import Servies from './services/services';
+import Projects from './projects/Projects';
 
 
 const Home = () => {
@@ -9,12 +11,18 @@ const Home = () => {
   return (
     <>
 
+    {/* header */}
+
+    <Header/>
+
     {/* Home Wrapper 1 */}
 
     <Servies/>
 
 
+    {/* projects */}
 
+    <Projects/>
 
      
      {/* Home Wrapper 2 */}

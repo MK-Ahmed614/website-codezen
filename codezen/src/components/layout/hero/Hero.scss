@@ -101,8 +101,11 @@
   }
   #title .text-title {
     -webkit-text-fill-color: white;
-    text-align: center;
     width: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
   }
 
   #title .text-title p {

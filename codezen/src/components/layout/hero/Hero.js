@@ -40,16 +40,20 @@ export default class Fade extends Component {
   }
 } */
 
-import "./Fade.scss";
+import { useTranslation } from "react-i18next";
+import "./Hero.scss";
 
 const Fade = () => {
+  const {t} = useTranslation();
   return (
     <div className="waveWrapper waveAnimation">
       <div id='title'>
   <div className="text-title">
-    <p>a software house that offers web <br/> and apps development services <br/> to help you achieve your goals </p>
-    <a href="#">contact</a>
-    <a href="#">who we are</a>
+    <p>{t('hero_title')}</p>
+    <div>
+    <a href="#">{t('contact_us')}</a>
+    <a href="#">{t('who_we_are')}</a>
+    </div>
   </div>
   
   <div className="ava-img">

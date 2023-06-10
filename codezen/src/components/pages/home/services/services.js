@@ -43,7 +43,7 @@ const Servies = () => {
     <div className="container">
       
             <h1 className='text-center heda-center'> {t("servies_header")}</h1>
-            <p className='text-center'>{t("servies_text")}</p>
+            <p className='text-center txt-services'>{t("servies_text")}</p>
             <div className="our-servies">
                 <div className="row">
                 {
@@ -59,7 +59,7 @@ const Servies = () => {
                               </div>
                               <div className="col-10">
                                 <div className="content">
-                                <h2> {item.header}</h2>
+                                <h4> {item.header}</h4>
                                   <p>{item.text}</p>
                                 </div>
                               </div>

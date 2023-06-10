@@ -5,7 +5,7 @@
         {
             "id":1,
             "text":"home",
-            "href":"/home"
+            "href":"/"
         },
         {
             "id":2,
@@ -28,8 +28,10 @@
             "href":"/contact"
         }
     ],
-    "order": "start your project",
-
+    "order": "start project",
+    "hero_title": "a software house that offers web and apps development services to help you achieve your goals ",
+    "contact_us": "contact us",
+    "who_we_are": "who we are",
     "servies_header" :"Our services",
     "servies_text" :"From actionable meeting notes to inspiring project plans, kickstart team participation with a flexible workspace",
     "servies": [
@@ -76,5 +78,341 @@
         "feat_4": "RESOURCE PLANNING",
         "feat_5": "USER EXPERIENCE STRUCTURE",
         "feat_6": "CHOOSING THE OPERATING SYSTEM"
-    }
+    },
+
+    "footer_upper": {
+        "best_inbox": "best offers in your inbox",
+        "place_holder": "Your Email",
+        "Subscribe": "Subscribe"
+    },
+
+    "footer_center": {
+        "head_1": "contact us",
+        "head_2": "CodeZen",
+        "head_3": "our services",
+        "address": "giza - egypt",
+        "phone": "+201118459882",
+        "mail": "codezen99@gmail.com"
+    },
+    "footerCenterLinks": [
+        {
+            "id":1,
+            "text":"home",
+            "href":"/"
+        },
+        {
+            "id":2,
+            "text":"our services",
+            "href":"/servies"
+        },
+        {
+            "id":3,
+            "text":"who are we",
+            "href":"/about-us"
+        },
+        {
+            "id":4,
+            "text":"why choose us",
+            "href":"/choose"
+        },
+        {
+            "id":5,
+            "text":"our project",
+            "href":"/our-project"
+        },
+        {
+            "id":6,
+            "text":"conatct us",
+            "href":"/contact"
+        },
+        {
+            "id":7,
+            "text":"privacy policy",
+            "href":"/privacy"
+        }
+    ],
+    "footerEndLinks": [
+        {
+            "id":1,
+            "text":"web developer",
+            "href":"#"
+        },
+        {
+            "id":2,
+            "text":"mobile applications",
+            "href":"#"
+        },
+        {
+            "id":3,
+            "text":"marketing",
+            "href":"#"
+        },
+        {
+            "id":4,
+            "text":"E-commerce App",
+            "href":"#"
+        }
+        ,
+        {
+            "id":5,
+            "text":"Ui Ux design",
+            "href":"#"
+        }
+        ,
+        {
+            "id":6,
+            "text":"graphic design",
+            "href":"#"
+        }
+    ],
+
+    "footer_copy": "CodeZen. 2023. All rights reserved.",
+
+    "Projects_title":"our work",
+     "Projects": [
+        {
+          "id": "01",
+          "category": "Web Design",
+          "bage":{
+            "title": "Traning gyem website",
+            "description":
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
+          "technologies": ["html" , "css" , "js" , "react"],
+          "imgUrl": "gyem",
+          "siteUrl": "https://sweet-sprinkles-7bc3fd.netlify.app/",
+          "client":{
+            "name":"mohamed ahemd",
+            "urimage":"image"
+          }
+          }
+         
+        },
+        {
+          "id": "02", 
+          "category": "Ux Desigin",
+          "bage":{
+            "title": "Portfilo website",
+            "description":
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
+          "technologies": ["html", " css", "js"],
+          "imgUrl": "port",
+          "siteUrl": "https://bespoke-pegasus-e9175a.netlify.app/",
+          "client":{
+            "name":"mohamed ahemd",
+            "urimage":"image"
+          }
+          }
+          
+        },
+        {
+          "id": "03",
+          "imgUrl": "company1",
+          "category": "Ux Desigin",
+          "bage":{
+            "title": "Portfilo website for company",
+            "description":
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
+            "technologies": ["html", " css", "js", "bootstrap"],
+            "siteUrl": "https://luxury-khapse-c274ad.netlify.app/",
+          "imgUrl": "gyem",
+          "client":{
+            "name":"mohamed ahemd",
+            "urimage":"image"
+          }
+         
+          }
+        
+        },
+        {
+          "id": "04",
+          "category": "Web Design",
+          "bage":{
+            "title": "E-commerce website",
+            "description":
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
+            "technologies": ["html", " css", "js", "bootstrap"],
+            "imgUrl": "company2",
+            "siteUrl": "https://angry-hamilton-a5193c.netlify.app/",
+          "client":{
+            "name":"mohamed ahemd",
+            "urimage":"image"
+          }
+          }
+         
+        
+        },
+        {
+          "id": "05",
+          "category": "Web Design",
+          "bage":{
+            "imgUrl": "courses",
+            "title": "Courses online website",
+            "description":
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
+            "technologies":  ["html", " css", "js", "bootstrap" , "jeQuery"],
+            "siteUrl": "https://fin-site.netlify.app/",
+          "client":{
+            "name":"mohamed ahemd",
+            "urimage":"image"
+          }
+          }
+         
+        },
+      
+        {
+          "id": "06",
+          "category": "Web Design",
+          "bage":{
+        "imgUrl": "realstate",
+          "title": "Real state website",
+          "description":
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
+          "technologies": ["html", " css", "js", "bootstrap" , "react"],
+          "siteUrl": "http://connectpoweruae.com/",
+          "client":{
+            "name":"mohamed ahemd",
+            "urimage":"image"
+          }
+          }
+         
+        },
+        {
+          "id": "07",
+          "category": "Web Design",
+          "bage":{
+            "imgUrl": "bander",
+          "title": "Hosting && Booking Website",
+          "description":
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
+          "technologies": ["html", " css", "js", "bootstrap" , "react"],
+          "siteUrl": "https://warm-platypus-62d546.netlify.app/",
+              "client":{
+                "name":"mohamed ahemd",
+                "urimage":"image"
+              }
+            }
+         
+        },
+        {
+          "id": "08",
+          "category": "Web Design",
+          "bage":{
+            "imgUrl": "footbal",
+            "title": "Footbal Website",
+            "description":
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
+            "technologies": ["html", " css", "js", "bootstrap" , "react"],
+            "siteUrl": "https://astrophile.onrender.com/",
+              "client":{
+                "name":"mohamed ahemd",
+                "urimage":"image"
+              }
+            }
+         
+        },
+        {
+          "id": "09",
+          "category": "Ux Desigin",
+          "bage":{
+            "imgUrl": "portfolioImg02",
+            "title": "Video Conference Website",
+            "description":
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
+            "technologies": ["React", "Tailwind css", "Node.js", "MongoDB"],
+            "siteUrl": "#",
+              "client":{
+                "name":"mohamed ahemd",
+                "urimage":"image"
+              }
+        }
+      
+        },
+        {
+          "id": "10",
+          "category": "Ux Desigin",
+          "bage":{
+            "imgUrl": "portfolioImg03",
+          "title": "File Sharing Website",
+          "description":
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
+          "technologies": ["React", "Tailwind css", "Node.js", "MongoDB"],
+          "siteUrl": "#",
+              "client":{
+                "name":"mohamed ahemd",
+                "urimage":"image"
+              }
+        }
+        
+        },
+        {
+          "id": "11",
+          "category": "Web Design",
+          "bage":{
+            "imgUrl": "portfolioImg04",
+            "title": "Landing Page",
+            "description":
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
+            "technologies": ["React", "Tailwind css", "Node.js", "MongoDB"],
+            "siteUrl": "#",
+              "client":{
+                "name":"mohamed ahemd",
+                "urimage":"image"
+              }
+        }
+         
+        },
+        {
+          "id": "12",
+          "category": "Web Design",
+          "bage":{
+            "imgUrl": "portfolioImg05",
+            "title": "Landing Page",
+            "description":
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
+            "technologies": ["React", "Tailwind css", "Node.js", "MongoDB"],
+            "siteUrl": "#",
+              "client":{
+                "name":"mohamed ahemd",
+                "urimage":"image"
+              }
+        }
+        },
+        {
+          "id": "13",
+          "category": "Web Design",
+          "bage":{
+            "imgUrl": "portfolioImg06",
+            "title": "Online Therapy Website",
+            "description":
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
+            "technologies": ["React", "Tailwind css", "Node.js", "MongoDB"],
+            "siteUrl": "#",
+              "client":{
+                "name":"mohamed ahemd",
+                "urimage":"image"
+              }
+        }
+        
+        },
+        {
+          "id": "14",
+          "category": "Ux Desigin",
+          "bage":{
+            "imgUrl": "portfolioImg07",
+            "title": "Appointment Booking Website",
+            "description":
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
+            "technologies": ["React", "Tailwind css", "Node.js", "MongoDB"],
+           "siteUrl" : "#",
+              "client":{
+                "name":"mohamed ahemd",
+                "urimage":"image"
+              }
+        }
+        
+        }
+      ]
+
+
+    
 }

@@ -11,8 +11,12 @@ import {
 } from "react-icons/bs";
 import {ImLocation} from "react-icons/im";
 import {FaEnvelope} from "react-icons/fa"
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const {t} = useTranslation();
+  const footerCenterLinks = t("footerCenterLinks", {returnObjects: true});
+  const footerEndLinks = t("footerEndLinks", {returnObjects: true})
   return (
     <>
       <footer
@@ -24,7 +28,7 @@ const Footer = () => {
             <div className="col-5">
               <div className="sign d-flex align-items-center text-white">
                 <img src="../images/newsletter.png" alt="newsletter" />
-                <p>best offers in your inbox</p>
+                <p>{t('footer_upper.best_inbox')}</p>
               </div>
             </div>
             <div className="col-7">
@@ -33,13 +37,13 @@ const Footer = () => {
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="Your Email"
+                    placeholder={t('footer_upper.place_holder')}
                     aria-label="Your Email"
                     aria-describedby="basic-addon2"
                   />
                   <div className="input-group-append">
                     <span className="input-group-text" id="basic-addon2">
-                      subscribe
+                    {t('footer_upper.Subscribe')}
                     </span>
                   </div>
                 </div>
@@ -89,46 +93,42 @@ const Footer = () => {
             </div>
             <div className="col-3">
               <div className="txt-footer-center">
-              <h4>contact us</h4>
+              <h4>{t('footer_center.head_1')}</h4>
                 <div className="footer-center-links">
                 <address style={{ color: "#dadada", fontSize: "14px", marginBottom: '5px' }}>
-                  <ImLocation style={{margin: '0 3px'}}/> Giza - Egypt
+                  <ImLocation style={{margin: '0 3px'}}/> {t('footer_center.address')}
                   </address>
-                  <a href="tel: +201118459882"> <BsFillTelephoneFill style={{margin: '0 3px'}}/>+201118459882</a>
+                  <a href="tel: +201118459882"> <BsFillTelephoneFill style={{margin: '0 3px'}}/>{t('footer_center.phone')}</a>
                   <a
                     style={{ textTransform: "lowercase" }}
                     href="mailto: codezen99@gmail.com"
                   >
-                  <FaEnvelope style={{margin: '0 3px'}}/>  codezen99@gmail.com
+                  <FaEnvelope style={{margin: '0 3px'}}/>  {t('footer_center.mail')}
                   </a>
                 </div>
               </div>
             </div>
             <div className="col-3">
               <div className="txt-footer-center">
-                <h4>codezen</h4>
+                <h4>{t('footer_center.head_2')}</h4>
                 <div className="footer-center-links">
-                  <Link>home</Link>
-                  <Link>our services</Link>
-                  <Link>who are we</Link>
-                  <Link>why choose us</Link>
-                  <Link>our project</Link>
-                  <Link>contact us</Link>
-                  <Link>privacy policy</Link>
+                  {footerCenterLinks.map((item) => {
+                    return (
+                      <Link key={item.id} to={item.href}> {item.text} </Link>
+                    )
+                  })}
                 </div>
               </div>
             </div>
             <div className="col-2">
               <div className="txt-footer-center">
-                <h4>our services</h4>
+                <h4>{t('footer_center.head_3')}</h4>
                 <div className="footer-center-links">
-                <Link>web developer</Link>
-                  <Link>web applications</Link>
-                  <Link>mobile applications</Link>
-                  <Link>marketing</Link>
-                  <Link>E-commerce App</Link>
-                  <Link>Ui Ux design</Link>
-                  <Link>graphic design</Link>
+                {footerEndLinks.map((item) => {
+                    return (
+                      <Link key={item.id} to={item.href}> {item.text} </Link>
+                    )
+                  })}
 
                 </div>
               </div>
@@ -142,7 +142,7 @@ const Footer = () => {
             <div className="col-6">
               <div className="txt-co">
                 <p style={{ textTransform: "capitalize" }}>
-                  &copy; CodeZen. 2023. All rights reserved.
+                  &copy; {t("footer_copy")}
                 </p>
               </div>
             </div>

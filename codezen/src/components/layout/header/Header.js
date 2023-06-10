@@ -1,4 +1,4 @@
-import Fade from '../fade/Fade';
+import Hero from '../hero/Hero';
 import './Header.scss';
 import Navbar from '../navbar/Navbar';
 
@@ -6,10 +6,10 @@ import Navbar from '../navbar/Navbar';
 const Header = () => {
   return (
     <>
-    <Navbar/>
+    
     <header className='header'>
       <div className='container'>
-      <Fade/>
+      <Hero/>
       </div>
     </header>
     </>

@@ -1,6 +1,7 @@
 @import '../../../variables/variables.scss';
 
 .servies{
+    padding-top: 80px;
     .servies_container{
        width: 100%;
        margin: auto;
@@ -9,9 +10,16 @@
     .heda-center{
         margin-bottom: 13px;
         text-transform: capitalize;
+        font-weight: 600;
         
     }
-    padding-top: 4rem;
+    .txt-services {
+        color: $color_3;
+        font-size: $font_14;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+    
     .our-servies{
         padding-top: 2.5rem;
         
@@ -21,14 +29,12 @@
             background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
             border-radius: $border_radius;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             padding: 15px;
             height: 260px;
             text-transform: capitalize;
             overflow: hidden;
-          .hold-data{
-            gap: 10px;
-          }
+
             .icon{
                 color: $color_1;
                 background-color: $color_2;
@@ -49,8 +55,48 @@
                    line-height: 1.7;
                    font-size: 14px;
                    margin-top: 10px;
+                   color: $color_3;
                 }
+
             }
         }
     }
+}
+
+[dir="rtl"] {
+    .servies{
+
+        .txt-services {
+            font-size: $font_16;
+        }
+        
+        .our-servies{
+            .item{
+                .icon{
+                    color: $color_1;
+                    background-color: $color_2;
+                    font-size: 20px;
+                    width: 55px;
+                    height: 55px;
+                    border-radius: $border_radius;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                   
+                };
+    
+                
+                .content{
+                    p{
+    
+                       line-height: 1.8;
+                       font-size: $font_14;
+                       margin-top: 15px;
+                       color: $color_3;
+                    }
+    
+                }
+            }
+        }
+    } 
 }

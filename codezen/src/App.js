@@ -6,6 +6,7 @@ import Servies from './components/pages/servies/Servies';
 import OurWork from './components/pages/ourWork/Our-Work';
 import Contact from './components/pages/contact/Contact';
 import './App.scss';
+import SingleProduct from "./components/pages/singleProduct/SingleProduct";
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="servies" element={<Servies />} />
             <Route path="our-work" element={<OurWork />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="SingleProduct" element={<SingleProduct />} />
           </Route>
         </Routes>
       </BrowserRouter>

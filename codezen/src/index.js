@@ -11,6 +11,7 @@ import 'flag-icon-css/css/flag-icons.min.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import App from './App';
+import { AppProvider } from './components/context/context.jsx';
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -32,8 +33,9 @@ backend: {
   const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+  <AppProvider>
+        <App />
+  </AppProvider>
+    
   </React.StrictMode>
-);
-
-reportWebVitals();
+)
