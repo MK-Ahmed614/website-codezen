@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './components/layout/Layout';
 import Home from './components/pages/home/Home';
@@ -10,6 +11,19 @@ import SingleProduct from "./components/pages/singleProduct/SingleProduct";
 
 const App = () => {
 
+  const handleCopy = (event) => {
+    event.preventDefault()
+    alert('Copying content from this site is not allowed.')
+  }
+
+  useEffect(() => {
+    window.addEventListener('copy' ,handleCopy)
+    return () =>{
+      window.removeEventListener('copy', handleCopy)
+    }
+  
+  },[])
+
   return (
     <>
       <BrowserRouter>
@@ -20,7 +34,7 @@ const App = () => {
             <Route path="servies" element={<Servies />} />
             <Route path="our-work" element={<OurWork />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="SingleProduct" element={<SingleProduct />} />
+            <Route path="SingleProduct/:id" element={<SingleProduct />} />
           </Route>
         </Routes>
       </BrowserRouter>

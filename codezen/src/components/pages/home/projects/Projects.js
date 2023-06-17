@@ -1,21 +1,9 @@
 import React, { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import './Projects.scss';
-import { useGlobalContext } from '../../../context/context.jsx';
-
+import { Link } from 'react-router-dom';
 const Projects = () => {
-  const { bageid, setbageid } = useGlobalContext()
 
-
-  const handleCopy = (event) => {
-    event.preventDefault()
-    alert('Copying content from this site is not allowed.')
-  }
-
-  const handleSeeMore = (id) => {
-    setbageid(id)
-   
-  }
 
   const { t } = useTranslation()
   const data = t('Projects', { returnObjects: true })
@@ -28,13 +16,13 @@ const Projects = () => {
           <div className="row">
             {data.slice(0, 6).map((item) => {
               return (
-                <div className="col-lg-6" key={item.id}>
+                <div className="col-4" key={item.id}>
                   <div className="parent-content">
-                    <div className="image">{item.bage.imgUrl}</div>
-                    <div className="oberly">
-                      overly color
-                      <button onClick={() => handleSeeMore(item.id)}>
-                        see more
+                    <div className="image"> <img src={item.bage.imgUrl} alt={item.bage.title} /> </div>
+                    <div className="overlay">
+                    overlay color
+                    <button>
+                                <Link to={`/SingleProduct/${item.id}`}>See more</Link>
                       </button>
                     </div>
                   </div>
@@ -45,7 +33,7 @@ const Projects = () => {
         </div>
       </div>
       <div className="button-countainer text-center">
-        <a href="/our-work">show more!</a>
+        <a href="/our-work">show more !</a>
       </div>
     </section>
   )

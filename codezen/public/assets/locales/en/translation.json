@@ -178,11 +178,11 @@
             "description":
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
           "technologies": ["html" , "css" , "js" , "react"],
-          "imgUrl": "gyem",
-          "siteUrl": "https://sweet-sprinkles-7bc3fd.netlify.app/",
+          "imgUrl": "../../../images/img-pro-1.png",
+          "siteUrl": "#",
           "client":{
             "name":"mohamed ahemd",
-            "urimage":"image"
+            "urimage":""
           }
           }
          
@@ -195,11 +195,11 @@
             "description":
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
           "technologies": ["html", " css", "js"],
-          "imgUrl": "port",
-          "siteUrl": "https://bespoke-pegasus-e9175a.netlify.app/",
+          "imgUrl": "../../../images/img-pro-2.png",
+          "siteUrl": "#",
           "client":{
             "name":"mohamed ahemd",
-            "urimage":"image"
+            "urimage":""
           }
           }
           
@@ -213,11 +213,11 @@
             "description":
               "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
             "technologies": ["html", " css", "js", "bootstrap"],
-            "siteUrl": "https://luxury-khapse-c274ad.netlify.app/",
-          "imgUrl": "gyem",
+            "siteUrl": "#",
+          "imgUrl": "../../../../images/img-pro-3.png",
           "client":{
             "name":"mohamed ahemd",
-            "urimage":"image"
+            "urimage":""
           }
          
           }
@@ -231,11 +231,11 @@
             "description":
               "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
             "technologies": ["html", " css", "js", "bootstrap"],
-            "imgUrl": "company2",
-            "siteUrl": "https://angry-hamilton-a5193c.netlify.app/",
+            "imgUrl": "../../../../images/img-pro-4.png",
+            "siteUrl": "#",
           "client":{
             "name":"mohamed ahemd",
-            "urimage":"image"
+            "urimage":""
           }
           }
          
@@ -245,15 +245,15 @@
           "id": "05",
           "category": "Web Design",
           "bage":{
-            "imgUrl": "courses",
+            "imgUrl": "../../../../images/img-pro-5.jpg",
             "title": "Courses online website",
             "description":
               "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
             "technologies":  ["html", " css", "js", "bootstrap" , "jeQuery"],
-            "siteUrl": "https://fin-site.netlify.app/",
+            "siteUrl": "#",
           "client":{
             "name":"mohamed ahemd",
-            "urimage":"image"
+            "urimage":""
           }
           }
          
@@ -263,15 +263,15 @@
           "id": "06",
           "category": "Web Design",
           "bage":{
-        "imgUrl": "realstate",
+        "imgUrl": "../../../../images/img-pro-6.jpg",
           "title": "Real state website",
           "description":
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
           "technologies": ["html", " css", "js", "bootstrap" , "react"],
-          "siteUrl": "http://connectpoweruae.com/",
+          "siteUrl": "#",
           "client":{
             "name":"mohamed ahemd",
-            "urimage":"image"
+            "urimage":""
           }
           }
          
