@@ -1,5 +1,5 @@
 
-
+import { useLocation } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import Langs from '../langs/langs';
 import "./Navbar.scss";
@@ -16,8 +16,9 @@ const Navbar = () => {
   }
   const navbalinks = t("navbarlinks", {returnObjects: true})
      /*  "navbar navbar-expand-lg navbar-light " */
+     const location = useLocation();
   return (
-<nav className={navFix ? "navbar navbar-expand-lg navbar-light active" : "navbar navbar-expand-lg navbar-light"}>
+<nav className={navFix &  location.pathname === "/" ?  "navbar navbar-expand-lg navbar-light active" : "navbar navbar-expand-lg navbar-light"}>
   <div className="container">
     <a className="navbar-brand" href="/src/components/pages/Home.js"> <img className='logo' src='../images/pro-logo.png' alt='name' /> </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
